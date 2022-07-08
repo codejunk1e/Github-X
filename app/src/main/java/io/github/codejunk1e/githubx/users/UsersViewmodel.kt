@@ -11,6 +11,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import java.net.UnknownHostException
 import javax.inject.Inject
 
 @HiltViewModel
@@ -22,7 +23,9 @@ class UsersViewmodel @Inject constructor(): ViewModel() {
 
     private val exceptionHandler = CoroutineExceptionHandler { _, exception ->
         _state.update { current ->
-            current.copy(isLoading = false, error = exception.message)
+            if (exception is UnknownHostException){
+                current.copy(isLoading = false, error = "Failed to fetch data, Please check internet!")
+            } else current.copy(isLoading = false, error = exception.message)
         }
     }
 
