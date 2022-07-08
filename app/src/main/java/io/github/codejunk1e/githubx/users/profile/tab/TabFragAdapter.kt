@@ -31,6 +31,8 @@ class TabFragAdapter: ListAdapter<UserRepo, TabFragAdapter.ViewHolder>(diffCallb
                 starGazers.text = item.starGazers.toString()
                 language.text = item.language
                 languageColor.setBackgroundColor(Color.parseColor(item.languageColor))
+                if (item.language == null) languageDetailsContainer.hide()
+                else languageDetailsContainer.show()
                 item.description?.let { description.text = it }
                 updatedAt.text = "Updated ${getTimeDifference(item.lastUpdatedDateString)}"
             }
