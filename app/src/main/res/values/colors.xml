@@ -10,4 +10,5 @@
     <color name="user_card_tint">#408AAA</color>
     <color name="loading_grey">#959494</color>
     <color name="search_drawable_tint">#C1C1C1</color>
+    <color name="language_tint">#51FD00</color>
 </resources>

@@ -117,6 +117,7 @@
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="12dp"
                     android:layout_height="12dp"
+                    app:tint="@color/language_tint"
                     android:src="@drawable/stack_color"
                     android:id="@+id/language_color"
                     app:shapeAppearanceOverlay="@style/circleImageView" />

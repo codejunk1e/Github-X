@@ -140,6 +140,7 @@
                         android:id="@+id/language_color"
                         android:layout_width="12dp"
                         android:layout_height="12dp"
+                        app:tint="@color/language_tint"
                         android:src="@drawable/stack_color"
                         app:shapeAppearanceOverlay="@style/circleImageView" />
 
