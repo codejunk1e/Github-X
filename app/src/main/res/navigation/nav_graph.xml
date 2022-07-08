@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="io.github.codejunk1e.githubx.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/repositories"
+        android:name="io.github.codejunk1e.githubx.repositories.RepositoriesFragment"
+        android:label="fragment_repositories"
+        tools:layout="@layout/fragment_repositories" />
+
+    <fragment
+        android:id="@+id/users"
+        android:name="io.github.codejunk1e.githubx.users.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_users_to_userprofileFragment"
+            app:destination="@id/userprofileFragment" >
+
+            <argument
+                android:name="userId"
+                app:argType="string"
+                app:nullable="false"/>
+
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/userprofileFragment"
+        android:name="io.github.codejunk1e.githubx.users.profile.UserprofileFragment"
+        android:label="fragment_userprofile"
+        tools:layout="@layout/fragment_userprofile">
+
+        <argument
+            android:name="userId"
+            app:argType="string"
+            app:nullable="false"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tabRepositoryFragment"
+        android:name="io.github.codejunk1e.githubx.users.profile.tab.TabRepositoryFragment"
+        android:label="fragment_tab_repository"
+        tools:layout="@layout/fragment_tab_repository" />
+
+
+</navigation>

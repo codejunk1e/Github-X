@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="generic_match_constraints">0dp</dimen>
+
+
+    <dimen name="margin_start_home_card_icons">12dp</dimen>
+    <dimen name="margin_top_home_card_icons">12dp</dimen>
+    <dimen name="padding_end_search">12dp</dimen>
+    <dimen name="padding_start_search">12dp</dimen>
+    <dimen name="end_margin_search_button">6dp</dimen>
+</resources>

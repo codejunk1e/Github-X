@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Github X</string>
+    <string name="home">Home</string>
+    <string name="users">Users</string>
+    <string name="repositories">Repositories</string>
+    <string name="search">Search</string>
+    <string name="not_found_text">We’ve searched the ends of the earth, repository not found, please try again</string>
+    <string name="search_for_repos">Search Github for repositories, issues and pull requests!</string>
+    <string name="divider">/</string>
+    <string name="user_not_found">We’ve searched the ends of the earth and we’ve not found this user, please try again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_tab_repository">This user doesn’t have repositories yet, come back later :-)</string>
+    <string name="public_string">Public</string>
+    <string name="search_for_users">Search Github for users...</string>
+    <string name="search_for_repositories">Search for repositories...</string>
+</resources>
