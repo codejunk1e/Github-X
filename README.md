@@ -5,7 +5,7 @@ Android Engineer Technical Assessment
 For architecture, I chose to go simple, monolith app with MVVM
 
 ### About the app
-The project was written in kotlin in a limited number of hours and features using the github API's
+The project was written in kotlin, MVVM, Coroutines, Flow and Hilt for DI in a limited number of hours
 
 ### Offline cahching & Paging?
 No offline caching or Paging was implemented in this app bacause the app mostly needs fresh data and there was a limited amount of time
